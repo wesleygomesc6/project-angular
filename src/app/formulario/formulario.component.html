@@ -1,0 +1,26 @@
+
+<div class="container">
+  <div class="card m-5">
+    <div class="card-body">
+      <p class="card-title fs-3 my-4">Formulário de Registro</p>
+      <div class="card-text">
+        <form (ngSubmit)="enviar()">
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput" [(ngModel)]="nome" name="nome">
+            <label for="floatingInput">Nome Completo </label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingEmail" [(ngModel)]="email" name="email">
+            <label for="floatingEmail">E-mail</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingTelefone" [(ngModel)]="telefone" name="telefone" mask="(00) 00000-0000">
+            <label for="floatingTelefone">Telefone</label>
+          </div>
+          <button class="btn btn-outline-primary mx-1">Enviar</button>
+          <button type="reset" class="btn btn-outline-danger mx-1">Limpar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

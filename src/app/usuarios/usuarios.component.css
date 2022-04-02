@@ -1,0 +1,15 @@
+tr.infos:hover  {
+  background-color: var( --bs-gray-200);
+}
+.borda:hover {
+  border-color: var(--bs-gray-400)
+}
+.link {
+  color: white;
+}
+.link:hover {
+  color: black;
+}
+.ativo {
+  display: none;
+}

@@ -1,0 +1,14 @@
+<div>
+  <mat-toolbar class="app-bar d-flex justify-content-between">
+    <span> {{ title.toUpperCase() }} </span>
+      <a class="m-2 text-decoration-none link" routerLink="usuarios" routerLinkActive="ativo"
+        >USUÁRIOS CADASTRADOS</a
+      >
+  </mat-toolbar>
+</div>
+<main>
+  <router-outlet></router-outlet>
+</main>
+<footer class="footer fixed-bottom text-center">
+  &copy; Wesley Gomes - {{ ano }}
+</footer>

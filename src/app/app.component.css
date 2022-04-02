@@ -1,0 +1,13 @@
+.app-bar {
+  background-color: var( --bs-green);
+  color: white;
+}
+.link {
+  color: white;
+}
+.link:hover {
+  color: black;
+}
+.ativo {
+  display: none;
+}

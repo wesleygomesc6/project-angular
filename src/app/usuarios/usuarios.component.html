@@ -1,0 +1,29 @@
+<div class="container mt-5">
+  <div class="d-flex justify-content-between">
+    <span class="fs-3 m-2">USUÁRIOS</span>
+    <button class="btn btn-primary m-1"><a class="m-2 text-decoration-none link" (click)="irRegistro()" routerLinkActive="ativo"
+      >NOVO</a
+    ></button>
+  </div>
+  <table class="table table-bordered borda">
+    <thead>
+      <tr class="table-info">
+        <th scope="col" class="text-center">#</th>
+        <th scope="col">NOME</th>
+        <th scope="col">E-MAIL</th>
+        <th scope="col">TELEFONE</th>
+      </tr>
+    </thead>
+    <tbody *ngIf="usuarios.length > 0; else usuariosVazio">
+      <tr *ngFor="let usuario of usuarios" class="infos">
+        <td class="text-center">{{ usuarios.indexOf(usuario) + 1 }}</td>
+        <td>{{ usuario.nome }}</td>
+        <td>{{ usuario.email }}</td>
+        <td>{{ usuario.telefone }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <ng-template #usuariosVazio>
+    <p>Sem usuários cadastrados.</p>
+  </ng-template>
+</div>
