@@ -7,7 +7,7 @@ import { Injectable } from '@angular/core';
 })
 export class UsuarioService {
   private listaUsuarios: any[];
-  private url = 'http://localhost:8080/usuarios';
+  private url = 'http://localhost:8080/api-calcme/usuarios';
 
   constructor(private http: HttpClient) {
 
